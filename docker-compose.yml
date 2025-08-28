@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - .:/app
-      - matches_cache:/app/matches_cache.db
+      - matches_cache:/app/data
     env_file:
       - .env
 

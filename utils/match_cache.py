@@ -2,7 +2,7 @@
 import sqlite3
 from datetime import datetime, timedelta
 
-DB_FILE = "matches_cache.db"
+DB_FILE = "/app/data/matches_cache.db"
 
 def get_db_connection():
     """
