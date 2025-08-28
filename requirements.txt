@@ -19,3 +19,5 @@ pytest-asyncio
 matplotlib
 seaborn
 pandas
+isodate
+PyNaCl

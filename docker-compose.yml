@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    volumes:
+      - .:/app
+      - matches_cache:/app
+    env_file:
+      - .env
+
+volumes:
+  matches_cache:
