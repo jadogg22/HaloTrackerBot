@@ -3,10 +3,6 @@ services:
   bot:
     build: .
     volumes:
-      - .:/app
-      - matches_cache:/app/data
+      - ./data:/app/data
     env_file:
       - .env
-
-volumes:
-  matches_cache:
