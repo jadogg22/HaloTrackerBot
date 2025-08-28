@@ -33,6 +33,7 @@ class HaloWatcher(commands.Cog):
                     await self.handle_halo_started(member)
             except discord.NotFound:
                 logging.error(f"❌ User with ID {config.USER_ID} not found in guild.")
+        match_cache.init_db()
         await self.send_startup_dm()
         await self._check_db_vs_server_matches()
 
